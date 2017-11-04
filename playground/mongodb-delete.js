@@ -29,14 +29,7 @@ MongoClient.connect('mongodb://localhost:27017/TodoApp', (err, db) => {
     //     console.log(result);
     // }); 
 
-    db.collection('Users').findOneAndDelete({
-        _id:new ObjectID('59fcd7974bbf56158caee952')
-    }).then((result)=>{
-        console.log(result);
-    },(err)=>{
-        console.log("unable to fetch todos",err);
-  });
-
+ 
 
 
     // db.close();
